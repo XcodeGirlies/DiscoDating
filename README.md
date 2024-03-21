@@ -1,4 +1,4 @@
-# DiscoDating
+# SportsMeetups
 
 By Chelsea Garcia, Giuliana Russi, and Laura Castro
 
