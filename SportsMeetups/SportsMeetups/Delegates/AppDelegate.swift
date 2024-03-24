@@ -3,17 +3,20 @@
 //  SportsMeetups
 //
 //  Created by Chelsea Garcia on 3/21/24.
-//
 
 import UIKit
+import ParseSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        ParseSwift.initialize(applicationId: "tlv3LOQ1AAMinx4qw4Oo6Vud6xUgY4t6V1ah6ZMV",
+                              clientKey: "m1800cAqIcZ4qHpVa8Kl2CiaO68AhGieQnjAOyHe",
+                              serverURL: URL(string: "https://parseapi.back4app.com")!)
+
+
         return true
     }
 
@@ -30,7 +33,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
