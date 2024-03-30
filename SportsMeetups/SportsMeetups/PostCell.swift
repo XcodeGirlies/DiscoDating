@@ -11,12 +11,11 @@ import Alamofire
 import AlamofireImage
 
 class PostCell: UITableViewCell {
-// initialize usernameLabel
-// initialize dateLabel
-// initialize postImageView
-// initialize captionLabel
+    @IBOutlet weak var usernameLabel: UITextField!
+    @IBOutlet weak var captionLabel: UITextField!
+    @IBOutlet weak var postImageView: UIImageView!
     
-// private var imageDataRequest: DataRequest?
+    private var imageDataRequest: DataRequest?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,17 +27,7 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    /*
     func configure(with post: Post) {
-        if let currentUser = User.current,
-           let lastPostedDate = currentUser.lastPostedDate,
-           let postCreatedDate = post.createdAt,
-           let diffHours = Calendar.current.dateComponents([.hour], from: postCreatedDate, to: lastPostedDate).hour {
-            blurView.isHidden = abs(diffHours) < 24
-        } else {
-            blurView.isHidden = false
-        }
-
         if let user = post.user {
             usernameLabel.text = user.username
         }
@@ -56,10 +45,6 @@ class PostCell: UITableViewCell {
             }
         }
         captionLabel.text = post.caption
-        
-        if let date = post.createdAt {
-            dateLabel.text = DateFormatter.postFormatter.string(from: date)
-        }
     }
 
     override func prepareForReuse() {
@@ -67,7 +52,6 @@ class PostCell: UITableViewCell {
         postImageView.image = nil
         imageDataRequest?.cancel()
     }
-    */
     
 }
 

@@ -9,105 +9,89 @@ import UIKit
 import ParseSwift
 
 class FeedViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
-
-    /*
-
-
-     class FeedViewController: UIViewController {
-         
-         @IBOutlet weak var tableView: UITableView!
-         private let refreshControl = UIRefreshControl()
-
-         private var posts = [Post]() {
-             didSet {
-                 tableView.reloadData()
-             }
+    @IBOutlet weak var tableView: UITableView! // this needs to be implemented in the storybord
+    private let refreshControl = UIRefreshControl()
+     
+     
+     private var posts = [Post]() {
+         didSet {
+             tableView.reloadData()
          }
-
+     }
+     
          override func viewDidLoad() {
-             super.viewDidLoad()
-             tableView.delegate = self
-             tableView.dataSource = self
-             tableView.allowsSelection = false
-             
-             tableView.refreshControl = refreshControl
-             refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
-         }
-
-         override func viewWillAppear(_ animated: Bool) {
-             super.viewWillAppear(animated)
-
-             queryPosts()
-         }
-
-         private func queryPosts(completion: (() -> Void)? = nil) {
-             let yesterdayDate = Calendar.current.date(byAdding: .day, value: (-1), to: Date())!
-             
-             let query = Post.query()
-                 .include("user")
-                 .order([.descending("createdAt")])
-                 .where("createdAt" >= yesterdayDate)
-                 .limit(10)
-             
-             query.find { [weak self] result in
-                 switch result {
-                 case .success(let posts):
-                     self?.posts = posts
-                 case .failure(let error):
-                     self?.showAlert(description: error.localizedDescription)
-                 }
-                 completion?()
-             }
-         }
+         super.viewDidLoad()
+         tableView.delegate = self
+         tableView.dataSource = self
+         tableView.allowsSelection = false
          
-         @IBAction func onLogOutTapped(_ sender: Any) {
-             showConfirmLogoutAlert()
-         }
+         tableView.refreshControl = refreshControl
+         refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+     }
 
-         @objc private func onPullToRefresh() {
-             refreshControl.beginRefreshing()
-             queryPosts { [weak self] in
-                 self?.refreshControl.endRefreshing()
-             }
-         }
+     override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
 
-         private func showConfirmLogoutAlert() {
-             let alertController = UIAlertController(title: "Log out of \(User.current?.username ?? "current account")?", message: nil, preferredStyle: .alert)
-             let logOutAction = UIAlertAction(title: "Log out", style: .destructive) { _ in
-                 NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+         queryPosts()
+     }
+
+     private func queryPosts(completion: (() -> Void)? = nil) {
+         let yesterdayDate = Calendar.current.date(byAdding: .day, value: (-1), to: Date())!
+         
+         let query = Post.query()
+             .include("user")
+             .order([.descending("createdAt")])
+             .where("createdAt" >= yesterdayDate)
+             .limit(10)
+         
+         query.find { [weak self] result in
+             switch result {
+             case .success(let posts):
+                 self?.posts = posts
+             case .failure(let error):
+                 self?.showAlert(description: error.localizedDescription)
              }
-             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-             alertController.addAction(logOutAction)
-             alertController.addAction(cancelAction)
-             present(alertController, animated: true)
+             completion?()
+         }
+     }
+     
+     @IBAction func onLogOutTapped(_ sender: Any) {
+         showConfirmLogoutAlert()
+     }
+
+     @objc private func onPullToRefresh() {
+         refreshControl.beginRefreshing()
+         queryPosts { [weak self] in
+             self?.refreshControl.endRefreshing()
          }
      }
 
-     extension FeedViewController: UITableViewDataSource {
-         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-             return posts.count
+     private func showConfirmLogoutAlert() {
+         let alertController = UIAlertController(title: "Log out of \(User.current?.username ?? "current account")?", message: nil, preferredStyle: .alert)
+         let logOutAction = UIAlertAction(title: "Log out", style: .destructive) { _ in
+             NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
          }
-
-         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-             guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell else {
-                 return UITableViewCell()
-             }
-             cell.configure(with: posts[indexPath.row])
-             print("are you getting inside tableview?")
-             return cell
-         }
+         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+         alertController.addAction(logOutAction)
+         alertController.addAction(cancelAction)
+         present(alertController, animated: true)
      }
+ }
 
-     extension FeedViewController: UITableViewDelegate { }
 
-     */
-    
+extension FeedViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell else {
+            return UITableViewCell()
+        }
+        cell.configure(with: posts[indexPath.row])
+        print("are you getting inside tableview?")
+        return cell
+    }
 }
+extension FeedViewController: UITableViewDelegate { }

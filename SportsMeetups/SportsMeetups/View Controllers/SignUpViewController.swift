@@ -57,7 +57,7 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            if pickerView == statePickerView {
+            if pickerView === statePickerView {
                 let selectedState = states[row]
                 fetchCities(forState: selectedState)
                 cityPickerView.isHidden = selectedState.isEmpty
