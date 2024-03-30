@@ -23,11 +23,12 @@ struct User: ParseUser {
     var emailVerified: Bool?
     var password: String?
     var authData: [String: [String: String]?]?
-
-    // Your custom properties.
-    // name - first & last
-    // location - city
-    // sports interested in - tags
+    
+    //custom properties
+    var address: String?
+    var city: String?
+    var state: String?
+    //sports interested in
 }
 
 

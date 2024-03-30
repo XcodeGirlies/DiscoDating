@@ -9,6 +9,7 @@ import UIKit
 
 class MakePostViewController: UIViewController {
 
+    // copy some stuff from PostViewController in Bereal Part 2 project.
     override func viewDidLoad() {
         super.viewDidLoad()
 
