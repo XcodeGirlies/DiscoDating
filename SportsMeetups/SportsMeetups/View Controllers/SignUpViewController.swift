@@ -14,6 +14,7 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var addressField: UITextField!
+    @IBOutlet weak var sportsField: UITextField!
     
     @IBOutlet weak var statePickerView: UIPickerView!
     @IBOutlet weak var cityPickerView: UIPickerView!
@@ -140,10 +141,13 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
                let email = emailField.text,
                let password = passwordField.text,
                let address = addressField.text,
+               let sports = sportsField.text,
                !username.isEmpty,
                !email.isEmpty,
                !password.isEmpty,
-               !address.isEmpty else {
+               !address.isEmpty,
+               !sports.isEmpty
+         else {
 
              showMissingFieldsAlert()
              return
@@ -154,6 +158,14 @@ class SignUpViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
          newUser.email = email
          newUser.password = password
          newUser.address = address
+         
+         let stateRow = statePickerView.selectedRow(inComponent: 0)
+         let cityRow = cityPickerView.selectedRow(inComponent: 0)
+         newUser.state = states[stateRow]
+         newUser.city = cities[cityRow]
+         
+         let sportsArray = sports.components(separatedBy: ", ")
+         newUser.sports = sportsArray
 
          newUser.signup { [weak self] result in
 

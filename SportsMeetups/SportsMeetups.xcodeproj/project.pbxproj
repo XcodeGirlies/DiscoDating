@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		403710A42BB7A32D00915C33 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 403710A32BB7A32D00915C33 /* Inter-SemiBold.otf */; };
 		403710A62BB7A39800915C33 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 403710A52BB7A39800915C33 /* Inter-Regular.otf */; };
+		403710AA2BBA6DB800915C33 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403710A92BBA6DB800915C33 /* DataManager.swift */; };
 		40D4912B2BACE80C00E94F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4912A2BACE80C00E94F57 /* AppDelegate.swift */; };
 		40D4912D2BACE80C00E94F57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4912C2BACE80C00E94F57 /* SceneDelegate.swift */; };
 		40D491322BACE80C00E94F57 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 40D491312BACE80C00E94F57 /* Base */; };
@@ -26,13 +27,13 @@
 		40D491592BB0A4EC00E94F57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D491582BB0A4EC00E94F57 /* User.swift */; };
 		40D4915B2BB0A4F500E94F57 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4915A2BB0A4F500E94F57 /* Post.swift */; };
 		40D4915E2BB0A80D00E94F57 /* MakePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4915D2BB0A80D00E94F57 /* MakePostViewController.swift */; };
-		40D491602BB0A8B500E94F57 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4915F2BB0A8B500E94F57 /* CommunityViewController.swift */; };
 		40D491622BB0AAA800E94F57 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D491612BB0AAA800E94F57 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		403710A32BB7A32D00915C33 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		403710A52BB7A39800915C33 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		403710A92BBA6DB800915C33 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		40D491272BACE80C00E94F57 /* SportsMeetups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMeetups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4912A2BACE80C00E94F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40D4912C2BACE80C00E94F57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		40D491582BB0A4EC00E94F57 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		40D4915A2BB0A4F500E94F57 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		40D4915D2BB0A80D00E94F57 /* MakePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostViewController.swift; sourceTree = "<group>"; };
-		40D4915F2BB0A8B500E94F57 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		40D491612BB0AAA800E94F57 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +95,7 @@
 		40D491292BACE80C00E94F57 /* SportsMeetups */ = {
 			isa = PBXGroup;
 			children = (
+				403710A92BBA6DB800915C33 /* DataManager.swift */,
 				40D491512BB0A44700E94F57 /* PostCell.swift */,
 				40D491552BB0A4BE00E94F57 /* ViewController+Extensions.swift */,
 				4037109A2BB79EB700915C33 /* Fonts */,
@@ -125,7 +126,6 @@
 				40D4914F2BB0A3D200E94F57 /* SignUpViewController.swift */,
 				40D4914D2BB0A3B500E94F57 /* LoginViewController.swift */,
 				40D4914B2BB0A35200E94F57 /* FeedViewController.swift */,
-				40D4915F2BB0A8B500E94F57 /* CommunityViewController.swift */,
 				40D491612BB0AAA800E94F57 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
@@ -226,13 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				40D4915B2BB0A4F500E94F57 /* Post.swift in Sources */,
+				403710AA2BBA6DB800915C33 /* DataManager.swift in Sources */,
 				40D491522BB0A44700E94F57 /* PostCell.swift in Sources */,
 				40D491502BB0A3D200E94F57 /* SignUpViewController.swift in Sources */,
 				40D4915E2BB0A80D00E94F57 /* MakePostViewController.swift in Sources */,
 				40D491562BB0A4BE00E94F57 /* ViewController+Extensions.swift in Sources */,
 				40D4912B2BACE80C00E94F57 /* AppDelegate.swift in Sources */,
 				40D4914C2BB0A35200E94F57 /* FeedViewController.swift in Sources */,
-				40D491602BB0A8B500E94F57 /* CommunityViewController.swift in Sources */,
 				40D4914E2BB0A3B500E94F57 /* LoginViewController.swift in Sources */,
 				40D491622BB0AAA800E94F57 /* ProfileViewController.swift in Sources */,
 				40D491592BB0A4EC00E94F57 /* User.swift in Sources */,

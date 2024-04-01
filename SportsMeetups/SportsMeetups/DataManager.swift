@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class DataManager {
+    static let shared = DataManager()
+    
+    var currentUser: User?
+    
+    private init() {}
+}

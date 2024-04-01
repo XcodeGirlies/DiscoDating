@@ -39,6 +39,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func login() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
         self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.feedNavigationControllerIdentifier)
+        guard let currentUser = User.current else {
+                fatalError("No user logged in")
+            }
+        DataManager.shared.currentUser = currentUser
+        
     }
 
     private func logOut() {

@@ -28,7 +28,7 @@ struct User: ParseUser {
     var address: String?
     var city: String?
     var state: String?
-    //sports interested in
+    var sports: [String]?
 }
 
 
