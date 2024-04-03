@@ -17,9 +17,12 @@ struct Post: ParseObject {
     var originalData: Data?
 
     // Your own custom properties.
-    var caption: String?
+    var title: String?
     var user: User?
-    var imageFile: ParseFile?
-    // location of meetup
     // date of meetup
+    var date: String?
+    // location of meetup
+    var address: String?
+    // type of sport
+    var sport: String?
 }
