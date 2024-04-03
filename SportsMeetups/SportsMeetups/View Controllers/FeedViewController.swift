@@ -37,18 +37,24 @@ class FeedViewController: UIViewController {
      }
 
      private func queryPosts(completion: (() -> Void)? = nil) {
-         let yesterdayDate = Calendar.current.date(byAdding: .day, value: (-1), to: Date())!
-         
+         guard let currentUser = User.current, let userState = currentUser.state else {
+             showAlert(description: "Unable to retrieve user information. Please try again later.")
+             completion?()
+             return
+         }
+
          let query = Post.query()
              .include("user")
+             .include()
              .order([.descending("createdAt")])
-             .where("createdAt" >= yesterdayDate)
              .limit(10)
          
          query.find { [weak self] result in
              switch result {
              case .success(let posts):
-                 self?.posts = posts
+                 // Filter posts based on user's state
+                 let filteredPosts = posts.filter { $0.user?.state == userState }
+                 self?.posts = filteredPosts
              case .failure(let error):
                  self?.showAlert(description: error.localizedDescription)
              }

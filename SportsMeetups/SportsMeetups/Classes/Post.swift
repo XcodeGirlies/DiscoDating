@@ -25,4 +25,6 @@ struct Post: ParseObject {
     var address: String?
     // type of sport
     var sport: String?
+    // post city
+    var state: String?
 }
