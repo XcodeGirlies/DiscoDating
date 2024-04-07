@@ -111,7 +111,9 @@ https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&nod
 
 # Demo Video
 
-Link to Demo on Youtube: https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T
+Link to Demo on Youtube: 
+
+[https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T](https://www.youtube.com/watch?v=XflPcwXp9F8)
 
 
 ---
@@ -119,9 +121,11 @@ Link to Demo on Youtube: https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayi
 # Gifs
 
 Login:
+
 ![youtube-video-gif (1) gif 14-03-31-956](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/80545ee8-3d2e-46e5-a1ce-1ded71e3605b)
 
 Make a post:
+
 ![youtube-video-gif (2)](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/20daee44-0a5c-4c34-9177-91331ce1df72)
 
 View profile:
