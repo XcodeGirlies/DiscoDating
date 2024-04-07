@@ -35,27 +35,26 @@ SportsMeetups functions as a mobile application where users can create an accoun
 
 **Required Must-have Stories**
 
-- [X]   As a User, I need to be able to create an account so that I can save my progress and make posts.
-2.  As a User, I need to be able to log into my account so that I can access my saved posts and activities.
-3.  As a User, I need to be able to create a post so that other users can view and join my game.
-       * This "create a post" should be on a separate page that guides me on what is necessary to create the post, such as the location.
-4.  As a User, I need to be able to see activities near me so that I can join other people in their games.
-5.  As a User, I need to have a profile with my interests to keep personal information.
-6.  As a User, I need to have a tab controller so that I can easily and effectively navigate through the pages of the app.
+- [X] As a User, I need to be able to create an account so that I can save my progress and make posts.
+- [X] As a User, I need to be able to log into my account so that I can access my saved posts and activities.
+- [X] As a User, I need to be able to create a post so that other users can view and join my game.
+- [X] * This "create a post" should be on a separate page that guides me on what is necessary to create the post, such as the location.
+- [X] As a User, I need to be able to see activities near me so that I can join other people in their games.
+- [X] As a User, I need to have a profile with my interests to keep personal information.
+- [X] As a User, I need to have a tab controller so that I can easily and effectively navigate through the pages of the app.
 
 
 **Optional Nice-to-have Stories**
 
-1. As a User, I would like to be able to view other people's profiles so I can add them as friends and see their interests.
-2. As a User, I would like to be able to edit my profile in case I move or want to change my picture.
-3. As a User, I would like to RSVP for events to ensure that the appropriate number of people attend.
-4. As a User, I would like to set a limit on the number of people who can RSVP to events so that only the necessary amount show up.
-5. As a User, I would like to see players with similar interests to mine so that I can invite them to games I am hosting.
+- [ ] As a User, I would like to be able to view other people's profiles so I can add them as friends and see their interests.
+- [ ] As a User, I would like to be able to edit my profile in case I move or want to change my picture.
+- [ ] As a User, I would like to RSVP for events to ensure that the appropriate number of - - [ ] As a User, I would like to set a limit on the number of people who can RSVP to events so that only the necessary amount show up.
+- [ ] As a User, I would like to see players with similar interests to mine so that I can invite them to games I am hosting.
 
 ## 2. Screen Archetypes
 **Sign up**
- *  Required User Feature: Users can sign up for the app.
- *  Required User Story: 1, so users can save their progress and post.
+- [X] * Required User Feature: Users can sign up for the app.
+- [X] * Required User Story: 1, so users can save their progress and post.
 **Log In**
  *  Required User Feature: Users can log into their created accounts.
  *  Required User Story: 2, so users can access their previously saved posts and activities.
