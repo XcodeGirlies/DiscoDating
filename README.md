@@ -6,9 +6,9 @@ By Chelsea Garcia, Giuliana Russi, and Laura Castro
 
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
-3. [Wireframes](#Wireframes)
-4. [Digital Wireframes & Mockups] (#[BONUS]-Digital-Wireframes-&-Mockups)
-5. [Demo Video] (#Demo-Video)
+4. [Wireframes](#Wireframes)
+5. [Digital Wireframes & Mockups](#Digital-Wireframes-&-Mockups)
+7. [Demo Video](#Demo-Video)
 
 # Overview
 ## Description
@@ -103,7 +103,7 @@ OR
 ---
 
 
-# [BONUS] Digital Wireframes & Mockups
+# Digital Wireframes & Mockups
 Link to our figma:
 https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&node-id=115%3A143&mode=design&t=mrB4eq1PV3QVuROT-1
 
@@ -112,5 +112,13 @@ https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&nod
 # Demo Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div>
+    <a href="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
+    </a>
+    <a href="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
+      <img style="max-width:300px;" src="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
+    </a>
+  </div>
 
 ---
