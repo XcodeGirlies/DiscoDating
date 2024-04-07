@@ -111,14 +111,7 @@ https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&nod
 
 # Demo Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Link to Demo on Youtube: https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T
 
-<div>
-    <a href="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
-    </a>
-    <a href="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
-      <img style="max-width:300px;" src="https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayifziQ7T">
-    </a>
-  </div>
 
 ---
