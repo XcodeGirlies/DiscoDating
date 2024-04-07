@@ -9,8 +9,6 @@ By Chelsea Garcia, Giuliana Russi, and Laura Castro
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
 
-# Original App Design Project - README Template Unit 7
-
 # Sports Meetup
 ## Table of Contents
 1. Overview
@@ -116,25 +114,5 @@ Profile Screen -----> Login screen if they click sign out
 # [BONUS] Digital Wireframes & Mockups
 Link to our figma:
 https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&node-id=115%3A143&mode=design&t=mrB4eq1PV3QVuROT-1
-
----
-[BONUS] Interactive Prototype
-Schema
-Models
-[Model Name, e.g., User]
-
-Property	Type	Description
-username	String	unique id for the user post (default field)
-password	String	user's password for login authentication
-...	...	...
-Networking
-[List of network requests by screen]
-[Example: [GET] /users - to retrieve user data]
-...
-[Add list of network requests by screen ]
-[Create basic snippets for each Parse network request]
-[OPTIONAL: List endpoints if using existing API such as Yelp]
-
-
 
 ---
