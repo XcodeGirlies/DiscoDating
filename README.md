@@ -7,14 +7,6 @@ By Chelsea Garcia, Giuliana Russi, and Laura Castro
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
-
-# Sports Meetup
-## Table of Contents
-1. Overview
-2. Product Spec
-3. Wireframes
-4. Schema
 
 # Overview
 ## Description
@@ -36,7 +28,7 @@ SportsMeetups functions as a mobile application where users can create an accoun
 
 
 
-# Product : Sports Meetup
+# Product Spec
 
 
 ## 1. User Stories (Required and Optional)
