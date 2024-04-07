@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		403710A42BB7A32D00915C33 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 403710A32BB7A32D00915C33 /* Inter-SemiBold.otf */; };
-		403710A62BB7A39800915C33 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 403710A52BB7A39800915C33 /* Inter-Regular.otf */; };
 		403710AA2BBA6DB800915C33 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403710A92BBA6DB800915C33 /* DataManager.swift */; };
 		40D4912B2BACE80C00E94F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4912A2BACE80C00E94F57 /* AppDelegate.swift */; };
 		40D4912D2BACE80C00E94F57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D4912C2BACE80C00E94F57 /* SceneDelegate.swift */; };
@@ -31,8 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		403710A32BB7A32D00915C33 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
-		403710A52BB7A39800915C33 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
 		403710A92BBA6DB800915C33 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		40D491272BACE80C00E94F57 /* SportsMeetups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMeetups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D4912A2BACE80C00E94F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,15 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4037109A2BB79EB700915C33 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				403710A52BB7A39800915C33 /* Inter-Regular.otf */,
-				403710A32BB7A32D00915C33 /* Inter-SemiBold.otf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		40D4911E2BACE80C00E94F57 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +85,6 @@
 				403710A92BBA6DB800915C33 /* DataManager.swift */,
 				40D491512BB0A44700E94F57 /* PostCell.swift */,
 				40D491552BB0A4BE00E94F57 /* ViewController+Extensions.swift */,
-				4037109A2BB79EB700915C33 /* Fonts */,
 				40D4915C2BB0A4FD00E94F57 /* Classes */,
 				40D491572BB0A4CC00E94F57 /* View Controllers */,
 				40D4914A2BB09D1300E94F57 /* Delegates */,
@@ -211,10 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				40D491342BACE80D00E94F57 /* Assets.xcassets in Resources */,
-				403710A62BB7A39800915C33 /* Inter-Regular.otf in Resources */,
 				40D491372BACE80D00E94F57 /* Base in Resources */,
 				40D491322BACE80C00E94F57 /* Base in Resources */,
-				403710A42BB7A32D00915C33 /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
