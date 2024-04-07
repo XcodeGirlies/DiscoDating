@@ -7,7 +7,7 @@ By Chelsea Garcia, Giuliana Russi, and Laura Castro
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 4. [Wireframes](#Wireframes)
-5. [Digital Wireframes & Mockups](#Digital-Wireframes-&-Mockups)
+5. [Digital Wireframes & Mockups](#Digital-Wireframes-and-Mockups)
 7. [Demo Video](#Demo-Video)
 
 # Overview
@@ -103,7 +103,7 @@ OR
 ---
 
 
-# Digital Wireframes & Mockups
+# Digital Wireframes and Mockups
 Link to our figma:
 https://www.figma.com/file/WkYcYW38ZiPAEAw9jiABAa/Sports-Meet-Up?type=design&node-id=115%3A143&mode=design&t=mrB4eq1PV3QVuROT-1
 
@@ -117,7 +117,15 @@ Link to Demo on Youtube: https://www.youtube.com/embed/kBzFBcfxirk?si=-y2DYp1ayi
 ---
 
 # Gifs
+
+Login:
+![youtube-video-gif (1) gif 14-03-31-956](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/80545ee8-3d2e-46e5-a1ce-1ded71e3605b)
+
+Make a post:
 ![youtube-video-gif (2)](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/20daee44-0a5c-4c34-9177-91331ce1df72)
 
-![youtube-video-gif (1) gif 14-03-31-956](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/80545ee8-3d2e-46e5-a1ce-1ded71e3605b)
+View profile:
+
+![2024_04_07_17_40_37](https://github.com/XcodeGirlies/SportsMeetups/assets/75771144/253d7df4-bed8-426b-86d1-b0e7665a81b7)
+
 
