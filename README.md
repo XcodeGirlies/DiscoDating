@@ -35,7 +35,7 @@ SportsMeetups functions as a mobile application where users can create an accoun
 
 **Required Must-have Stories**
 
-1.  As a User, I need to be able to create an account so that I can save my progress and make posts.
+- [X]   As a User, I need to be able to create an account so that I can save my progress and make posts.
 2.  As a User, I need to be able to log into my account so that I can access my saved posts and activities.
 3.  As a User, I need to be able to create a post so that other users can view and join my game.
        * This "create a post" should be on a separate page that guides me on what is necessary to create the post, such as the location.
