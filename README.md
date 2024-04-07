@@ -38,7 +38,7 @@ SportsMeetups functions as a mobile application where users can create an accoun
 - [X] As a User, I need to be able to create an account so that I can save my progress and make posts.
 - [X] As a User, I need to be able to log into my account so that I can access my saved posts and activities.
 - [X] As a User, I need to be able to create a post so that other users can view and join my game.
-- [X] * This "create a post" should be on a separate page that guides me on what is necessary to create the post, such as the location.
+- [X] This "create a post" should be on a separate page that guides me on what is necessary to create the post, such as the location.
 - [X] As a User, I need to be able to see activities near me so that I can join other people in their games.
 - [X] As a User, I need to have a profile with my interests to keep personal information.
 - [X] As a User, I need to have a tab controller so that I can easily and effectively navigate through the pages of the app.
@@ -53,20 +53,20 @@ SportsMeetups functions as a mobile application where users can create an accoun
 
 ## 2. Screen Archetypes
 **Sign up**
-- [X] * Required User Feature: Users can sign up for the app.
-- [X] * Required User Story: 1, so users can save their progress and post.
+- [X] Required User Feature: Users can sign up for the app.
+- [X] Required User Story: 1, so users can save their progress and post.
 **Log In**
- *  Required User Feature: Users can log into their created accounts.
- *  Required User Story: 2, so users can access their previously saved posts and activities.
+- [X] Required User Feature: Users can log into their created accounts.
+- [X] Required User Story: 2, so users can access their previously saved posts and activities.
 **Post page**
- *  Required User Feature: Users can create a post with guidance on the requirements for others to join their game.
- *  Required User Story: 3, so users can have others join their game.
+- [X] Required User Feature: Users can create a post with guidance on the requirements for others to join their game.
+- [X] Required User Story: 3, so users can have others join their game.
 **Feed Page**
- *  Required User Feature: Users will be able to see posts created by others to join games.
- *  Required User Story: 4, so users can join other people's games.
+- [X] Required User Feature: Users will be able to see posts created by others to join games.
+- [X] Required User Story: 4, so users can join other people's games.
 **Profile**
- *  Required User Feature: Users will have their own profiles.
- *  Required User Story: 5, so users can maintain their personal interests and information.
+- [X] Required User Feature: Users will have their own profiles.
+- [X] Required User Story: 5, so users can maintain their personal interests and information.
 
 
 ## 3. Navigation
@@ -79,17 +79,17 @@ Post Button    -----> Post Screen
 
 
 Flow Navigation (Screen to Screen)
-The screens can navigate to eachother by clicking on certain icons
+- [X] The screens can navigate to eachother by clicking on certain icons
 
-Login screen -----> sign up screen if they click on not a member 
+- [X] Login screen -----> sign up screen if they click on not a member 
 OR
-Login Screen -----> Feed Screen if everything inputted correctly
+- [X] Login Screen -----> Feed Screen if everything inputted correctly
 
-Sign Up screen -----> Feed screen
+- [X] Sign Up screen -----> Feed screen
 
-Feed Screen -----> Post screen if they click on create a post 
+- [X] Feed Screen -----> Post screen if they click on create a post 
 
-Profile Screen -----> Login screen if they click sign out
+- [X] Profile Screen -----> Login screen if they click sign out
 
 
 # Wireframes
